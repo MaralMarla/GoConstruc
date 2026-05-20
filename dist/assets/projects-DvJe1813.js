@@ -1,1 +1,0 @@
-import"./modulepreload-polyfill-B5Qt9EMX.js";import{i as r,a as o}from"./i18n-Ce9AuZMD.js";r({lightSectionIds:["overview","project-02","project-03"],darkOverrideIds:["cta"],bodyCursorDarkClass:"on-dark"});o();
