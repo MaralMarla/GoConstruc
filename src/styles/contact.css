@@ -1,0 +1,121 @@
+/* ── Contact Section ── */
+.contact-section {
+  background: var(--c-black);
+  padding: clamp(80px, 12vh, 160px) 0 0;
+  position: relative;
+}
+.contact-section__video-bg {
+  position: absolute; inset: 0; z-index: 0; overflow: hidden;
+}
+.contact-section__video-bg video {
+  width: 100%; height: 100%; object-fit: cover;
+  opacity: .08; filter: saturate(.2) brightness(.4);
+}
+.contact-section__video-bg::after {
+  content: ''; position: absolute; inset: 0; background: rgba(5,5,5,.55);
+}
+.contact-section .u-container { position: relative; z-index: 1; }
+.contact-section__grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: clamp(48px, 6vw, 96px); align-items: end;
+  padding-bottom: clamp(56px, 8vh, 96px);
+}
+.contact-section__headline {
+  font-family: var(--fd); font-size: var(--f-lg); font-weight: 700;
+  text-transform: uppercase; line-height: 1.0;
+  color: var(--c-tl); margin-top: 16px;
+}
+.contact-section__headline em { font-style: normal; color: var(--c-alp); }
+.contact-section__details { display: flex; flex-direction: column; gap: 28px; }
+.contact-item { display: flex; flex-direction: column; gap: 6px; }
+.contact-item__label { color: var(--c-dim); }
+.contact-item__value {
+  font-family: var(--fd); font-size: clamp(15px, 1.8vw, 22px);
+  font-weight: 400; letter-spacing: .02em; color: var(--c-tl);
+  transition: color .25s;
+}
+a.contact-item__value:hover { color: var(--c-alp); }
+.contact-section__footer {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 24px 0;
+  display: flex; justify-content: space-between; align-items: center;
+}
+
+/* -- Partner Form -- */
+.partner-section {
+  background: var(--c-mid);
+  padding: clamp(64px, 10vh, 120px) 0;
+}
+.partner__inner {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+}
+.partner__title {
+  font-family: var(--fd); font-size: var(--f-lg);
+  font-weight: 900; text-transform: uppercase;
+  letter-spacing: -.01em; line-height: 1;
+  color: var(--c-tl); margin-bottom: 20px;
+}
+.partner__desc {
+  font-size: var(--f-body); line-height: 1.7;
+  color: var(--c-dim); margin-bottom: 40px; max-width: 560px;
+  margin-left: auto; margin-right: auto;
+}
+.partner-form { display: flex; flex-direction: column; gap: 24px; }
+.partner-form__field { display: flex; flex-direction: column; gap: 8px; }
+.partner-form__label {
+  font-size: var(--f-cap); letter-spacing: .12em;
+  text-transform: uppercase; color: var(--c-dim); font-weight: 500;
+}
+.partner-form__input,
+.partner-form__textarea {
+  background: rgba(255,255,255,.06);
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 4px; color: var(--c-tl);
+  font-family: var(--fb); font-size: var(--f-body);
+  padding: 14px 16px; outline: none;
+  transition: border-color .2s; resize: vertical;
+}
+.partner-form__input:focus,
+.partner-form__textarea:focus { border-color: rgba(255,255,255,.3); }
+.partner-form__input::placeholder,
+.partner-form__textarea::placeholder { color: var(--c-dim); }
+.partner-form__submit {
+  align-self: stretch;
+  background: var(--c-tl); color: var(--c-void);
+  font-family: var(--fd); font-size: clamp(14px, 1.4vw, 16px);
+  font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+  border: none; border-radius: 4px; padding: 18px 32px;
+  cursor: pointer; transition: background .2s, color .2s; margin-top: 8px;
+}
+.partner-form__submit:hover { background: var(--c-al); color: var(--c-pure); }
+.partner-form__submit:disabled { opacity: .5; cursor: not-allowed; }
+.partner-form__status {
+  font-size: var(--f-cap); letter-spacing: .06em;
+  color: var(--c-al); min-height: 1.4em;
+}
+.partner-form__status--error { color: #e07070; }
+
+/* ── Site Footer ── */
+.site-footer {
+  background: var(--c-black);
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 24px 0;
+}
+.site-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .contact-section__grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 600px) {
+  .site-footer__inner { flex-direction: column; gap: 8px; text-align: center; }
+}
+@media (max-width: 480px) {
+  .contact-section { padding-block: 64px; }
+  .contact-section__grid { gap: 32px; }
+}

@@ -1,0 +1,522 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoConstruction Construction Materials — Basaltwool, Rebar, Thermobasalt, Growool. Volcanic rock engineered for superior performance and sustainability." />
+  <title>Materials — GoConstruction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <link rel="stylesheet" href="/src/styles/materials.css" />
+</head>
+<body>
+
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <!-- NAV -->
+  <nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav__logo" aria-label="GoConstruction — home">
+      <img src="logoConst.png" alt="GoConstruction" />
+    </a>
+    <ul class="nav__links" role="list">
+      <li><a href="services.html" class="nav__link"               data-i18n="nav.services">Services</a></li>
+      <li><a href="projects.html"       class="nav__link"               data-i18n="nav.projects">Projects</a></li>
+      <li><a href="materials.html"      class="nav__link active"        data-i18n="nav.materials">Materials</a></li>
+      <li><a href="index.html#future"   class="nav__link"               data-i18n="nav.future">Future</a></li>
+      <li><a href="contact.html"  class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <button class="lang-switch" id="lang-btn" aria-label="Switch language">
+      <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+    </button>
+    <button class="nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="nav-drawer" id="nav-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <ul class="nav-drawer__links" role="list">
+      <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+      <li><a href="projects.html"       data-i18n="nav.projects">Projects</a></li>
+      <li><a href="materials.html"      data-i18n="nav.materials">Materials</a></li>
+      <li><a href="index.html#future"   data-i18n="nav.future">Future</a></li>
+      <li><a href="contact.html"  data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <button class="lang-switch lang-switch--drawer" id="lang-btn-drawer" aria-label="Switch language">
+      <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+    </button>
+  </div>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero" id="hero">
+    <video class="hero__video" autoplay muted loop playsinline src="/lavamove.mp4"></video>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <div class="eyebrow hero__eyebrow reveal">Volcanic Rock Technology</div>
+      <h1 class="hero__title reveal" data-delay="1">
+        Material<br><em>science</em><br>from the<br>earth itself
+      </h1>
+      <p class="hero__sub reveal" data-delay="2">
+        Four advanced construction materials derived from Mongolian volcanic basalt rock — engineered in Japan for superior performance, safety, and sustainability.
+      </p>
+    </div>
+    <div class="hero__corner" aria-hidden="true">
+      <div class="hero__corner-num">4</div>
+      <div class="hero__corner-lbl">Products</div>
+    </div>
+    <div class="scroll-ind" aria-hidden="true">
+      <div class="scroll-ind__track"><div class="scroll-ind__bar"></div></div>
+      <span class="scroll-ind__lbl">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       PRODUCT GRID
+  ══════════════════════════════ -->
+  <section class="grid-section" id="products">
+    <div class="grid-section__inner">
+      <div class="grid-section__hdr">
+        <h2 class="grid-section__h2 reveal">Four <span>products,</span><br>one origin</h2>
+        <p class="grid-section__note reveal" data-delay="1">
+          All four products share the same volcanic basalt source — refined through Japanese precision into materials that outperform conventional alternatives.
+        </p>
+      </div>
+      <div class="prod-grid">
+        <a href="#basaltwool" class="prod-card reveal">
+          <div class="prod-card__img">
+            <img src="/basalt.png" alt="Basaltwool insulation" loading="lazy" />
+          </div>
+          <div class="prod-card__body">
+            <div class="prod-card__num">Product 01</div>
+            <div class="prod-card__name">Basaltwool</div>
+            <div class="prod-card__tag">Insulation &amp; Fire Protection</div>
+            <p class="prod-card__desc">Lightweight thermal and acoustic insulation from natural volcanic rock. Non-combustible to 1000°C+, moisture-resistant, 50-year stable performance.</p>
+            <span class="prod-card__anchor">Explore</span>
+          </div>
+        </a>
+        <a href="#rebar" class="prod-card reveal" data-delay="1">
+          <div class="prod-card__img">
+            <img src="/rebar.png" alt="Basalt rebar" loading="lazy" />
+          </div>
+          <div class="prod-card__body">
+            <div class="prod-card__num">Product 02</div>
+            <div class="prod-card__name">Rebar</div>
+            <div class="prod-card__tag">Structural Reinforcement</div>
+            <p class="prod-card__desc">Basalt fiber composite rods with spiral profile. One quarter the weight of steel, corrosion-free, with a service life exceeding 100 years.</p>
+            <span class="prod-card__anchor">Explore</span>
+          </div>
+        </a>
+        <a href="#thermobasalt" class="prod-card reveal" data-delay="2">
+          <div class="prod-card__img">
+            <img src="/thermobasalt.png" alt="Thermobasalt insulation" loading="lazy" />
+          </div>
+          <div class="prod-card__body">
+            <div class="prod-card__num">Product 03</div>
+            <div class="prod-card__name">Thermobasalt</div>
+            <div class="prod-card__tag">High-Temperature Insulation</div>
+            <p class="prod-card__desc">Industrial-grade heat insulation for pipelines, furnaces, and high-temp environments. Rated from −180°C to +1100°C in cylindrical and slab forms.</p>
+            <span class="prod-card__anchor">Explore</span>
+          </div>
+        </a>
+        <a href="#growool" class="prod-card reveal" data-delay="3">
+          <div class="prod-card__img">
+            <img src="/growool.png" alt="Growool cultivation medium" loading="lazy" />
+          </div>
+          <div class="prod-card__body">
+            <div class="prod-card__num">Product 04</div>
+            <div class="prod-card__name">Growool</div>
+            <div class="prod-card__tag">Hydroponic Cultivation Medium</div>
+            <p class="prod-card__desc">Soilless growing substrate from basalt fiber. Enables year-round stable crop production with reduced water consumption, independent of soil quality or climate.</p>
+            <span class="prod-card__anchor">Explore</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       01 BASALTWOOL (dark)
+  ══════════════════════════════ -->
+  <section class="mat-section mat-section--dark" id="basaltwool">
+    <div class="mat-section__inner">
+
+      <!-- BASALT intro -->
+      <div class="basalt-intro reveal">
+        <h2 class="basalt-title" data-i18n="bw.title">BASALT</h2>
+        <div class="basalt-intro__body">
+          <p class="basalt-intro__para" data-i18n="bw.intro">This product is a high-density, rigid insulation board that can be used for the thermal insulation of building walls, roofs, and floors. It is made from fibers produced from molten basalt rock and combines heat resistance with long-term stability.</p>
+          <ul class="basalt-benefits">
+            <li data-i18n="bw.b1">Contributes to the reduction of air pollution. Excellent sound absorption providing a sound-proofing effect, and reduces fire risk and protects human life and property.</li>
+            <li data-i18n="bw.b2">In particular, it has the ability to withstand high temperatures of 1000°C or more and, compared with other insulation materials, exhibits outstanding fire resistance. In the event of a fire, it can slow the spread of flames and secure valuable time for evacuation and firefighting.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3 product images -->
+      <div class="basalt-imgs reveal" data-delay="1">
+        <div class="basalt-img-item"><img src="basalt.png"  alt="Basalt wool insulation" loading="lazy" /></div>
+        <div class="basalt-img-item"><img src="basalt2.png" alt="Basalt wool roof application" loading="lazy" /></div>
+        <div class="basalt-img-item"><img src="basalt3.png" alt="Basalt wool wall application" loading="lazy" /></div>
+      </div>
+
+      <!-- BASALTWOOL INSULATION -->
+      <div class="basalt-block reveal" data-delay="1">
+        <h3 class="basalt-block__title" data-i18n="bw.ins.title">BASALTWOOL INSULATION</h3>
+        <p class="basalt-block__body" data-i18n="bw.ins.body">Basalt wool with a density of 35–130 kg/m³ — these are rather rigid slabs that can be used to insulate interfloor floors, load-bearing structures, upper layers in a load bearing roof device and other load bearing structures. It is made from molten basalt rock, which is converted into fiber with characteristics that no other insulation material has.</p>
+        <p class="basalt-block__body" data-i18n="bw.ins.chars">In particular, the characteristics of this thermal insulation material are:</p>
+        <ul class="basalt-list">
+          <li data-i18n="bw.ins.li1">Energy saving</li>
+          <li data-i18n="bw.ins.li2">Reduction of pollution</li>
+          <li data-i18n="bw.ins.li3">Noise absorption</li>
+          <li data-i18n="bw.ins.li4">Reducing the risk of fires</li>
+          <li data-i18n="bw.ins.li5">Protection of life and property in case of fire</li>
+        </ul>
+      </div>
+
+      <!-- SIGNIFICANCE OF BASALT WOOL -->
+      <div class="basalt-block reveal" data-delay="1">
+        <h3 class="basalt-block__title" data-i18n="bw.sig.title">SIGNIFICANCE OF BASALT WOOL</h3>
+        <p class="basalt-block__body" data-i18n="bw.sig.b1">Basalt wool is a natural material with many advantages, such as fire resistance, sound insulation, long life, and no adverse effects on health. It is suitable for use in construction, industry, transportation, horticulture, and water management.</p>
+        <p class="basalt-block__body" data-i18n="bw.sig.b2">Basalt stone wool thermal insulation material is a very important strategic product for national sustainable constructions that are friendly to the environment and society, reduce carbon dioxide and its footprint, are energy and heat efficient, have no quality risk, and provide fire safety.</p>
+      </div>
+
+      <!-- WHAT TO CUT + PRECAUTIONS -->
+      <div class="basalt-two-col reveal" data-delay="1">
+        <div class="basalt-two-col__item">
+          <h3 class="basalt-block__title" data-i18n="bw.cut.title">WHAT TO CUT BASALTWOOL WITH?</h3>
+          <p class="basalt-block__body" data-i18n="bw.cut.body">In production, the material is cut on machines. At home, you can use a clerical knife. It is sharp enough, but only suitable for slabs of small thickness. Thicker mats are cut with a special metal hacksaw. It is necessary to cut carefully, without pulling the fibers. Measure with a ruler and mark with a pencil the lines along which the cut will go.</p>
+        </div>
+        <div class="basalt-two-col__item">
+          <h3 class="basalt-block__title" data-i18n="bw.prec.title">PRECAUTIONS DURING OPERATION</h3>
+          <p class="basalt-block__body" data-i18n="bw.prec.body">Insulation materials are environmentally friendly, but you need to be careful when working with them. When tiles are cut, microparticles are released into the air and can enter the lungs. You should wear a respirator or at least a gauze bandage. It is also recommended to protect your eyes with special glasses or a mask. In general, basalt is not dangerous — when it gets on the skin, it does not cause allergies, itching or other symptoms.</p>
+        </div>
+      </div>
+
+      <!-- APPLICATION -->
+      <div class="basalt-app reveal" data-delay="2">
+        <h3 class="basalt-app__title" data-i18n="bw.app.title">APPLICATION</h3>
+        <div class="app-grid">
+          <figure class="app-grid__item">
+            <img src="appforfacade.png"   alt="For Facade" loading="lazy" />
+            <figcaption>FOR FACADE</figcaption>
+          </figure>
+          <figure class="app-grid__item">
+            <img src="appventfacade.png"  alt="For Vent Facade" loading="lazy" />
+            <figcaption>FOR VENT FACADE</figcaption>
+          </figure>
+          <figure class="app-grid__item">
+            <img src="appforfloor.png"    alt="For Floor" loading="lazy" />
+            <figcaption>FOR FLOOR</figcaption>
+          </figure>
+          <figure class="app-grid__item">
+            <img src="appunivrsal.png"    alt="Universal" loading="lazy" />
+            <figcaption>UNIVERSAL</figcaption>
+          </figure>
+          <figure class="app-grid__item">
+            <img src="approof.png"        alt="The Roof" loading="lazy" />
+            <figcaption>THE ROOF</figcaption>
+          </figure>
+          <figure class="app-grid__item">
+            <img src="appsandwichpanel.png" alt="Basalt Sandwich Panel" loading="lazy" />
+            <figcaption>BASALT SANDWICH PANEL</figcaption>
+          </figure>
+        </div>
+        <img src="basalttable.png" alt="Basaltwool product specifications table" class="basalt-table" loading="lazy" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       02 REBAR (light)
+  ══════════════════════════════ -->
+  <section class="mat-section mat-section--light" id="rebar">
+    <div class="mat-section__inner">
+
+      <div class="mat-hdr mat-hdr--light reveal">
+        <div class="mat-hdr__left">
+          <div class="mat-hdr__ghost" aria-hidden="true">02</div>
+          <div style="margin-top:-0.25em;">
+            <div class="eyebrow eyebrow--dark" style="margin-bottom:14px;" data-i18n="rb.eyebrow">Structural Reinforcement</div>
+            <h2 class="mat-hdr__title" style="color:var(--c-td);" data-i18n="rb.heading">Basalt<br>Rebar</h2>
+          </div>
+        </div>
+        <div class="mat-hdr__right">
+          <p class="mat-hdr__desc" style="color:var(--c-tm);" data-i18n="rb.hdr.desc">
+            Basalt fibers bonded with high-performance resin into spiral-profile rods. Rebar delivers the tensile strength of steel reinforcement without corrosion, at a fraction of the weight — and with a service life that outlasts the structure itself.
+          </p>
+          <div class="spec-row spec-row--lt">
+            <div class="spec-cell" style="background:var(--c-pure);">
+              <div class="spec-val">¼</div>
+              <div class="spec-key" data-i18n="rb.s1">Weight vs steel</div>
+            </div>
+            <div class="spec-cell" style="background:var(--c-pure);">
+              <div class="spec-val">100yr+</div>
+              <div class="spec-key" data-i18n="rb.s2">Service life</div>
+            </div>
+            <div class="spec-cell" style="background:var(--c-pure);">
+              <div class="spec-val">0%</div>
+              <div class="spec-key" data-i18n="rb.s3">Corrosion risk</div>
+            </div>
+            <div class="spec-cell" style="background:var(--c-pure);">
+              <div class="spec-val" data-i18n="rb.s4.val">Spiral</div>
+              <div class="spec-key" data-i18n="rb.s4">Rod profile</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Intro text + image -->
+      <div class="rebar-body reveal" data-delay="1">
+        <div class="rebar-body__text">
+          <p class="rebar-intro-para" data-i18n="rb.intro">Basalt rebar is manufactured by bonding parallel basalt fibers with resin and forming them into rod-shaped bars. The surface has a spiral profile, which improves adhesion to concrete. Made from volcanic basalt rock, it is strong, lightweight, and corrosion-resistant, and is considered a next-generation alternative to steel reinforcement.</p>
+          <h3 class="rebar-feat-title" data-i18n="rb.feat.title">Features / Advantages</h3>
+          <ul class="rebar-feat-list">
+            <li data-i18n="rb.feat.1">Corrosion Resistant — does not rust or corrode, ensuring long-term durability.</li>
+            <li data-i18n="rb.feat.2">Lightweight — approximately one-quarter the weight of steel rebar, making it significantly lighter than conventional reinforcement.</li>
+            <li data-i18n="rb.feat.3">Reduced Transportation Costs — its lower weight enables more efficient and cost-effective transport.</li>
+            <li data-i18n="rb.feat.4">Easy Assembly and Installation — simplifies handling and accelerates construction processes.</li>
+            <li data-i18n="rb.feat.5">Long Service Life (Over 100 Years) — designed for durability with an extended lifespan exceeding a century.</li>
+          </ul>
+        </div>
+        <div class="rebar-body__img">
+          <img src="/rebar.png" alt="Basalt rebar" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Technical Specification -->
+      <div class="rebar-table-section reveal" data-delay="2">
+        <h3 class="rebar-table-title" data-i18n="rb.tech.title">TECHNICAL SPECIFICATION</h3>
+        <img src="/rebartable1.png" alt="Technical specification table" class="rebar-table-img" loading="lazy" />
+      </div>
+
+      <!-- Comparative Characteristics -->
+      <div class="rebar-table-section reveal" data-delay="3">
+        <h3 class="rebar-table-title" data-i18n="rb.comp.title">COMPARATIVE CHARACTERISTICS</h3>
+        <img src="/rebartable2.png" alt="Comparative characteristics table" class="rebar-table-img" loading="lazy" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       03 THERMOBASALT (graph/dark)
+  ══════════════════════════════ -->
+  <section class="mat-section mat-section--graph" id="thermobasalt">
+    <div class="mat-section__inner">
+
+      <div class="mat-hdr mat-hdr--dark reveal">
+        <div class="mat-hdr__left">
+          <div class="mat-hdr__ghost" aria-hidden="true">03</div>
+          <div style="margin-top:-0.25em;">
+            <div class="eyebrow" style="margin-bottom:14px;" data-i18n="tb.eyebrow">High-Temperature Insulation</div>
+            <h2 class="mat-hdr__title" data-i18n="tb.heading">Thermo<br>basalt</h2>
+          </div>
+        </div>
+        <div class="mat-hdr__right">
+          <p class="mat-hdr__desc" data-i18n="tb.hdr.desc">
+            Industrial-grade thermal insulation engineered for extreme environments. Thermobasalt covers a continuous operating range of −180°C to +1100°C — from cryogenic pipelines to furnace linings.
+          </p>
+          <div class="spec-row spec-row--gph">
+            <div class="spec-cell" style="background:var(--c-graph);">
+              <div class="spec-val">−180°C</div>
+              <div class="spec-key" data-i18n="tb.s1">Minimum operating temp</div>
+            </div>
+            <div class="spec-cell" style="background:var(--c-graph);">
+              <div class="spec-val">+1100°C</div>
+              <div class="spec-key" data-i18n="tb.s2">Maximum operating temp</div>
+            </div>
+            <div class="spec-cell" style="background:var(--c-graph);">
+              <div class="spec-val">20–300mm</div>
+              <div class="spec-key" data-i18n="tb.s3">Cylinder diameters</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big title + intro -->
+      <div class="thermo-lead reveal" data-delay="1">
+        <h2 class="thermo-big-title" data-i18n="tb.title">THERMOBASALT</h2>
+        <p class="thermo-intro-para" data-i18n="tb.intro">Thermobasalt insulation is a vapor-tight insulation material using a synthetic resin binder and is ideal for pipes, chimneys, ducts, and industrial cylindrical equipment. The outer surface is finished with aluminum foil metallized paper / foil mat, providing high moisture resistance and durability. Depending on the shape and size of the installation area, it is manufactured in two types: cylindrical type and rolled mat type.</p>
+      </div>
+
+      <!-- M60/M80/M100 grades + product image -->
+      <div class="thermo-grades reveal" data-delay="2">
+        <p class="thermo-grades__text" data-i18n="tb.grades">Thermobasalt (M60 kg/m³) rolled mats are used as insulation for ventilation ducts, low-temperature and heat-resistant pipelines, various tanks and storage facilities with porous surfaces, vegetable greenhouses, and cooling facilities. Thermobasalt (M80 and M100 kg/m³) rolled mats are used as insulation for high-temperature steam, hot-water, and gas pipelines, steam pressure vessels, high-temperature combustion furnaces, equipment, installations, and chimneys in oil refineries, power plants, and heat-supply plants.</p>
+        <div class="thermo-grades__img">
+          <img src="/thermobasalt.png" alt="Thermobasalt cylindrical insulation rolls" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- APPLICATION -->
+      <div class="thermo-app reveal" data-delay="3">
+        <h3 class="thermo-app__title" data-i18n="tb.app.title">APPLICATION</h3>
+        <div class="thermo-app-row">
+          <div class="thermo-app-row__img">
+            <img src="/thermobasaltapp1.png" alt="Thermobasalt application diagram" loading="lazy" />
+          </div>
+          <div class="thermo-app-row__text">
+            <p data-i18n="tb.app.p1">BASALTWOOL® industrially manufactured, mutually compatible insulation components provide the same insulation capacity both for straight pipe sections and pipe elbows, helping to maintain optimal performance throughout the pipeline.</p>
+          </div>
+        </div>
+        <div class="thermo-app-row">
+          <div class="thermo-app-row__text">
+            <p data-i18n="tb.app.p2">The high service temperatures involved in power generation, together with the variety of components that require insulation demand a wide range of special insulation solutions. For example, boilers need flexible, multilayer solutions, whereas tanks require a range of varying density slabs with high compressive stress.</p>
+          </div>
+          <div class="thermo-app-row__img">
+            <img src="/thermobasaltapp2.png" alt="Thermobasalt power plant application" loading="lazy" />
+          </div>
+        </div>
+        <div class="thermo-app-objs">
+          <img src="/thermobasaltobj1.png" alt="Thermobasalt object applications" loading="lazy" />
+          <img src="/thermobasaltobject2.png" alt="Thermobasalt product range" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- CYLINDER / PIPE INSULATION -->
+      <div class="thermo-cyl reveal" data-delay="4">
+        <h2 class="thermo-cyl__title" data-i18n="tb.cyl.title">THERMOBASALT CYLINDER</h2>
+        <h3 class="thermo-cyl__sub" data-i18n="tb.cyl.sub">PIPE INSULATION</h3>
+        <p class="thermo-cyl__desc" data-i18n="tb.cyl.desc">The THERMOBASALT cylindrical products are used for pipelines with a diameter of 20–300 mm. They are covered with silver paper and folmatecan with a thickness of 5 cm.</p>
+        <div class="thermo-cyl-body">
+          <div class="thermo-cyl-body__table">
+            <img src="/thermobaslattable.png" alt="Technical specification table" class="thermo-table-img" loading="lazy" />
+          </div>
+          <div class="thermo-cyl-body__chars">
+            <h4 class="thermo-chars__title" data-i18n="tb.chars.title">Characteristics</h4>
+            <ul class="thermo-chars-list">
+              <li data-i18n="tb.chars.1">Resistant to temperatures from −180 to +1100 degrees Celsius.</li>
+              <li data-i18n="tb.chars.2">Resistant to chemical reactions in contact with alkalis, acids, solvents and oils.</li>
+              <li data-i18n="tb.chars.3">It isolates water and moisture and protects metal structures from corrosion.</li>
+              <li data-i18n="tb.chars.4">Easy to assemble and install.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="thermo-install">
+          <img src="/thermobasaltinstallation.png" alt="Thermobasalt installation" loading="lazy" />
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       04 GROWOOL (off-white)
+  ══════════════════════════════ -->
+  <section class="mat-section mat-section--off" id="growool">
+    <div class="mat-section__inner">
+
+      <div class="mat-hdr mat-hdr--light reveal">
+        <div class="mat-hdr__left">
+          <div class="mat-hdr__ghost" aria-hidden="true">04</div>
+          <div style="margin-top:-0.25em;">
+            <div class="eyebrow eyebrow--dark" style="margin-bottom:14px;" data-i18n="gw.eyebrow">Hydroponic Cultivation</div>
+            <h2 class="mat-hdr__title" style="color:var(--c-td);" data-i18n="gw.heading">Grow<br>wool</h2>
+          </div>
+        </div>
+        <div class="mat-hdr__right">
+          <p class="mat-hdr__desc" style="color:var(--c-tm);" data-i18n="gw.hdr.desc">
+            A soilless cultivation substrate produced from volcanic basalt fiber — bringing precision agriculture technology to environments where soil quality, water availability, or climate would otherwise make crop production impossible.
+          </p>
+          <div class="spec-row spec-row--off">
+            <div class="spec-cell">
+              <div class="spec-val">365</div>
+              <div class="spec-key" data-i18n="gw.s1">Days/year growing</div>
+            </div>
+            <div class="spec-cell">
+              <div class="spec-val">↓ H₂O</div>
+              <div class="spec-key" data-i18n="gw.s2">Reduced water usage</div>
+            </div>
+            <div class="spec-cell">
+              <div class="spec-val">Zero</div>
+              <div class="spec-key" data-i18n="gw.s3">Soil dependency</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Big title + intro -->
+      <div class="gw-lead reveal" data-delay="1">
+        <h2 class="gw-title" data-i18n="gw.title">GROWOOL</h2>
+        <p class="gw-intro" data-i18n="gw.intro">Cultivation using hydroponic technology based on rock wool does not depend on climate or weather conditions and enables stable harvests throughout all four seasons. The staff of Mongol Basalt JSC prepared the first a hydroponic cultivation technology guidebook in Mongolian and began selling it in 2021.</p>
+      </div>
+
+      <!-- Bilingual project box -->
+      <div class="gw-project-box reveal" data-delay="2">
+        <div class="gw-project-box__hdr">
+          <div>
+            <div class="gw-project-box__title-jp">グリーンプロジェクト GROWOOL（グルウール）</div>
+            <div class="gw-project-box__title-en">GREEN PROJECT GROWOOL</div>
+          </div>
+          <div class="gw-sdg">
+            <div class="gw-sdg-icon gw-sdg-icon--2">2</div>
+            <div class="gw-sdg-icon gw-sdg-icon--6">6</div>
+            <div class="gw-sdg-icon gw-sdg-icon--15">15</div>
+          </div>
+        </div>
+        <div class="gw-project-box__body">
+          <p class="gw-project-box__col">ロックウールを原料とした水耕栽培技術は、気候や天候に左右されず、四季を通して安定した収穫が可能です。モンゴルバサルト株式会社のスタッフは、モンゴル語で初めて水耕栽培技術ガイドブックを作成し、2021年に販売を開始しました。</p>
+          <p class="gw-project-box__col">Cultivation by hydroponic technology using stone sponge will create the possibility of sustainable harvest in four seasons of the year, regardless of the weather. The staff of Mongolia Basalt JSC prepared the first Mongolian-language hydroponic technology instruction and handbook for soilless cultivation and released it for sale in 2021.</p>
+        </div>
+      </div>
+
+      <!-- Description + product image -->
+      <div class="gw-desc reveal" data-delay="3">
+        <p class="gw-desc__text" data-i18n="gw.desc">GROWOOL is a medium made exclusively for hydroponic cultivation (soilless cultivation) and is made from fibers derived from basalt. It promotes healthy and stable growth by stably supporting plant roots and uniformly supplying moisture, oxygen, and nutrients. Using GROWOOL enables stable crop production throughout the year, unaffected by climate or weather. It also significantly reduces water usage compared to conventional soil cultivation, creating a clean and easy-to-manage cultivation environment.</p>
+        <div class="gw-desc__img">
+          <img src="/growool.png" alt="GROWOOL hydroponic system" loading="lazy" />
+        </div>
+      </div>
+
+      <!-- Full scene image -->
+      <div class="gw-imgs reveal" data-delay="4">
+        <img src="/growooldesc.png" alt="GROWOOL cultivation environment" loading="lazy" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CTA
+  ══════════════════════════════ -->
+  <section class="cta-section" id="cta">
+    <video class="cta-section__bg" autoplay muted loop playsinline
+           src="magnific_ultra-cinematic-construct_2945404435.mp4"></video>
+    <div class="cta-section__inner">
+      <h2 class="cta-title reveal">
+        Specify<br><em>basalt</em><br>in your<br>next build
+      </h2>
+      <div class="cta-right reveal" data-delay="2">
+        <p class="cta-body">
+          Our materials team can advise on product selection, specification, and supply chain logistics from Mongolia to your project site anywhere in Japan.
+        </p>
+        <ul class="cta-contacts">
+          <li>
+            <span class="cta-lbl">Email</span>
+            <a href="mailto:info@go-construction.co.jp">info@go-construction.co.jp</a>
+          </li>
+          <li>
+            <span class="cta-lbl">Tel</span>
+            <a href="tel:+81364587522">03-6458-7522</a>
+          </li>
+        </ul>
+        <a href="contact.html" class="cta-btn">
+          Get in touch <span class="cta-btn__arr">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <span class="site-footer__copy">© 2025 GoConstruction Co., Ltd.</span>
+    <span class="site-footer__tag" data-i18n="footer.tagline">Full force towards the future.</span>
+  </footer>
+
+  <script type="module" src="/src/js/materials.js"></script>
+</body>
+</html>

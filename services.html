@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="GoConstruction services — bridge repair, pavement &amp; civil engineering, and basalt construction materials." />
+  <title>Services — GoConstruction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <link rel="stylesheet" href="/src/styles/services.css" />
+</head>
+<body>
+
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════
+     NAV
+════════════════════════════════════════ -->
+<nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo" aria-label="GoConstruction — home">
+    <img src="logo.png" alt="GoConstruction" />
+  </a>
+  <ul class="nav__links" role="list">
+    <li><a href="services.html" class="nav__link active" data-i18n="nav.services">Services</a></li>
+    <li><a href="projects.html" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="materials.html" class="nav__link" data-i18n="nav.materials">Materials</a></li>
+    <li><a href="index.html#future"  class="nav__link" data-i18n="nav.future">Future</a></li>
+    <li><a href="contact.html" class="nav__link nav__link--cta" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <button class="lang-switch" id="lang-btn" aria-label="Switch language">
+    <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+  </button>
+  <button class="nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer" id="nav-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+  <ul class="nav-drawer__links" role="list">
+    <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="materials.html" data-i18n="nav.materials">Materials</a></li>
+    <li><a href="index.html#future"  data-i18n="nav.future">Future</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <button class="lang-switch lang-switch--drawer" id="lang-btn-drawer" aria-label="Switch language">
+    <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+  </button>
+</div>
+
+<!-- ════════════════════════════════════════
+     SERVICES — 3D scroll viewer
+════════════════════════════════════════ -->
+<section id="services" class="svc3d-section" aria-labelledby="services-heading">
+  <h2 id="services-heading" class="sr-only" data-i18n="svc.headline">Services</h2>
+</section>
+
+<script type="module" src="/src/js/services.js"></script>
+</body>
+</html>

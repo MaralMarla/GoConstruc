@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact GoConstruction Co., Ltd. — Get in touch or partner with us for your infrastructure project." />
+  <title>Contact — GoConstruction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/src/styles/global.css" />
+  <link rel="stylesheet" href="/src/styles/contact.css" />
+</head>
+<body>
+
+<div id="cursor-dot"  aria-hidden="true"></div>
+<div id="cursor-ring" aria-hidden="true"></div>
+
+<!-- NAV -->
+<nav id="nav" class="nav" role="navigation" aria-label="Main navigation">
+  <a href="index.html" class="nav__logo" aria-label="GoConstruction home">
+    <img src="logo.png" alt="GoConstruction" />
+  </a>
+  <ul class="nav__links" role="list">
+    <li><a href="services.html" class="nav__link" data-i18n="nav.services">Services</a></li>
+    <li><a href="projects.html" class="nav__link" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="materials.html" class="nav__link" data-i18n="nav.materials">Materials</a></li>
+    <li><a href="index.html#future" class="nav__link" data-i18n="nav.future">Future</a></li>
+    <li><a href="contact.html" class="nav__link active nav__link--cta" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <button class="lang-switch" id="lang-btn" aria-label="Switch language">
+    <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+  </button>
+  <button class="nav__burger" id="nav-burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-drawer">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="nav-drawer" id="nav-drawer" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+  <ul class="nav-drawer__links" role="list">
+    <li><a href="services.html" data-i18n="nav.services">Services</a></li>
+    <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+    <li><a href="materials.html" data-i18n="nav.materials">Materials</a></li>
+    <li><a href="index.html#future" data-i18n="nav.future">Future</a></li>
+    <li><a href="contact.html" data-i18n="nav.contact">Contact</a></li>
+  </ul>
+  <button class="lang-switch lang-switch--drawer" id="lang-btn-drawer" aria-label="Switch language">
+    <span data-l="en">EN</span><span class="lang-switch__sep">/</span><span data-l="jp">JP</span>
+  </button>
+</div>
+
+<!-- CONTACT INFO -->
+<section id="contact" class="contact-section" aria-labelledby="contact-heading">
+  <div class="contact-section__video-bg" aria-hidden="true">
+    <video src="magnific_fast-aggressive-cinematic_2945347069.mp4" autoplay muted loop playsinline></video>
+  </div>
+  <div class="u-container">
+    <div class="contact-section__grid">
+      <div class="contact-section__statement">
+        <span class="accent-line reveal"></span>
+        <p class="u-eyebrow reveal" data-delay="1" data-i18n="cta.eyebrow">Get In Touch</p>
+        <h2 id="contact-heading" class="contact-section__headline reveal" data-delay="2" data-i18n="cta.headline">
+          Building a stronger<br><em>future together.</em>
+        </h2>
+      </div>
+      <div class="contact-section__details reveal" data-delay="3">
+        <div class="contact-item">
+          <span class="contact-item__label u-label" data-i18n="cta.email_lbl">Email</span>
+          <a href="mailto:info@go-construction.co.jp" class="contact-item__value">info@go-construction.co.jp</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item__label u-label" data-i18n="cta.phone_lbl">Phone</span>
+          <a href="tel:+81364587522" class="contact-item__value">03-6458-7522</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item__label u-label" data-i18n="cta.ops_lbl">Operations</span>
+          <span class="contact-item__value" data-i18n="cta.ops_val">Mongolia &amp; Japan</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-item__label u-label" data-i18n="cta.founded_lbl">Founded</span>
+          <span class="contact-item__value" data-i18n="cta.founded_val">March 1, 2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNER WITH US -->
+<section id="partner" class="partner-section">
+  <div class="u-container">
+    <div class="partner__inner">
+      <h2 class="partner__title reveal" data-i18n="partner.title">PARTNER WITH US</h2>
+      <p class="partner__desc reveal" data-delay="1" data-i18n="partner.desc">If you are looking to bring a space to life, share a few details to help us reach out to you so we can discuss how to bring your vision to life.</p>
+      <form id="partner-form" class="partner-form reveal" data-delay="2" novalidate>
+        <div class="partner-form__field">
+          <label class="partner-form__label" data-i18n="partner.name_lbl">Your full name</label>
+          <input type="text" name="name" class="partner-form__input" autocomplete="name" required />
+        </div>
+        <div class="partner-form__field">
+          <label class="partner-form__label" data-i18n="partner.email_lbl">Your email address</label>
+          <input type="email" name="email" class="partner-form__input" autocomplete="email" required />
+        </div>
+        <div class="partner-form__field">
+          <label class="partner-form__label" data-i18n="partner.project_lbl">A little bit about your project</label>
+          <textarea name="project" class="partner-form__textarea" rows="4" placeholder="Example Text" data-i18n-placeholder="partner.project_ph"></textarea>
+        </div>
+        <button type="submit" class="partner-form__submit" id="partner-submit">
+          <span data-i18n="partner.submit">SUBMIT</span>
+        </button>
+        <p class="partner-form__status" id="partner-status" aria-live="polite"></p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="u-container">
+    <div class="site-footer__inner">
+      <span class="u-label">&#169; 2025 GoConstruction Co., Ltd. All rights reserved.</span>
+      <span class="u-label" data-i18n="footer.tagline">Building a stronger future together.</span>
+    </div>
+  </div>
+</footer>
+
+<script type="module" src="/src/js/contact.js"></script>
+</body>
+</html>
